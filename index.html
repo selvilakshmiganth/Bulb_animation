@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <style>
+  img{
+  position:absolute; top:200; left:600;
+  border:solid 2px black;
+  }
+  input
+  {
+    position:absolute; top:500; left:610;
+	border:solid 2px black;
+	font-family:arial;
+	font-weight:bold;
+	font-size:20px;
+  }
+  </style>
+ <script>
+ var s=0
+function fun()
+{
+t=document.getElementById("im1");
+if(s==1)
+{
+t.src="bulb1.png";
+s=0;
+}
+else
+{
+t.src="bulb2.png";
+s=1;
+}
+}
+
+</script>
+  </head>
+<body>
+<img src="bulb1.png" id="im1"/>
+<input type="button" value="Bulb ON/OFF" onclick="fun()"/>
+</body>
+</html>
